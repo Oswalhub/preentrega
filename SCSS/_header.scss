@@ -1,0 +1,26 @@
+
+header {
+    background-color: $primary-color;
+    color: $font-color;
+    padding: 1em 0;
+  
+    nav ul {
+      list-style: none;
+      padding: 0;
+      @include flex-center;
+    }
+  
+    nav ul li {
+      margin: 0 1em;
+    }
+  
+    nav ul li a {
+      color: $font-color;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

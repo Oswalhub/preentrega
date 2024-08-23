@@ -1,0 +1,35 @@
+
+footer {
+    background-color: $primary-color;
+    color: $font-color;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  
+    .social-media {
+      @include flex-center;
+      a {
+        margin: 0 0.5em;
+        color: $font-color;
+        text-decoration: none;
+   .social-media a {
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.2); 
+  }
+}
+
+  }
+}
+
+      }
+  
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    
+  
+  

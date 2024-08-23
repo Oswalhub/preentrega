@@ -1,0 +1,58 @@
+
+.fuego, .contacto, .nosotros, .eventos, .visitas {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    @include flex-center;
+    flex-direction: column;
+    color: $font-color;
+    text-shadow: 2px 2px 4px #000;
+    padding: 40px;
+    border: 2px solid $border-color;
+    width: 100%;
+    margin: 10px 0;
+  
+    h1 {
+      @include responsive-font(2em, 2.5em, $heading-font-size);
+    }
+  
+    p {
+      @include responsive-font(1em, 1.2em, $paragraph-font-size);
+    }
+  }
+  
+  // Imágenes de fondo específicas
+  .fuego {
+    background-image: url('../assets/img/imghome.png');
+  }
+  
+  .eventos {
+    background-image: url('../assets/img/images.jpeg');
+  }
+  
+  .nosotros {
+    background-image: url('../assets/img/imgnosotros.png');
+  }
+  
+  .visitas {
+    background-image: url('../assets/img/imgvisitas.png');
+  }
+  
+  .contacto {
+    background-image: url('../assets/img/imgcontacto.png');
+  }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fuego h1, .eventos h1, .nosotros h1, .visitas h1, .contacto h1 {
+    animation: fadeIn 2s ease-in-out;
+  }
+  

@@ -1,0 +1,148 @@
+header {
+  background-color: #732F16;
+  color: white;
+  padding: 1em 0;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0 1em;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #732F16;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-media a {
+  margin: 0 0.5em;
+  color: white;
+  text-decoration: none;
+}
+footer .social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.fuego, .contacto, .nosotros, .eventos, .visitas {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+  padding: 40px;
+  border: 2px solid #f15918;
+  width: 100%;
+  margin: 10px 0;
+}
+.fuego h1, .contacto h1, .nosotros h1, .eventos h1, .visitas h1 {
+  font-size: 3em;
+}
+@media (max-width: 768px) {
+  .fuego h1, .contacto h1, .nosotros h1, .eventos h1, .visitas h1 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 576px) {
+  .fuego h1, .contacto h1, .nosotros h1, .eventos h1, .visitas h1 {
+    font-size: 2em;
+  }
+}
+.fuego p, .contacto p, .nosotros p, .eventos p, .visitas p {
+  font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  .fuego p, .contacto p, .nosotros p, .eventos p, .visitas p {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 576px) {
+  .fuego p, .contacto p, .nosotros p, .eventos p, .visitas p {
+    font-size: 1em;
+  }
+}
+
+.fuego {
+  background-image: url("../assets/img/imghome.png");
+}
+
+.eventos {
+  background-image: url("../assets/img/images.jpeg");
+}
+
+.nosotros {
+  background-image: url("../assets/img/imgnosotros.png");
+}
+
+.visitas {
+  background-image: url("../assets/img/imgvisitas.png");
+}
+
+.contacto {
+  background-image: url("../assets/img/imgcontacto.png");
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fuego h1, .eventos h1, .nosotros h1, .visitas h1, .contacto h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+.carousel-inner img {
+  max-height: 450px; 
+  object-fit: cover; 
+  width: 100%; 
+}
+.carousel-caption h5 {
+  color: rgb(18, 221, 218); /
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.carousel-caption p {
+  color: rgb(203, 171, 171); 
+  text-shadow: 2px 2px 4px rgba(59, 53, 53, 0.8); 
+}
+.carousel-caption {
+  background-color: rgba(6, 6, 6, 0.765); 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+
+  color: white; 
+}
+/*# sourceMappingURL=style.css.map */

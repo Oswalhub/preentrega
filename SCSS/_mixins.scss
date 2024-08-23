@@ -1,0 +1,19 @@
+// _mixins.scss
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive-font($size-small, $size-medium, $size-large) {
+    font-size: $size-large;
+  
+    @media (max-width: 768px) {
+      font-size: $size-medium;
+    }
+  
+    @media (max-width: 576px) {
+      font-size: $size-small;
+    }
+  }
+  
